@@ -1,0 +1,11 @@
+function LetterChanges(str){
+  var converted = str.replace([a-z], function(char){
+    return (char === 'z' || char === 'Z') ? 'a' : String.fromCharCode(char.charCodeAt() + 1);
+  });
+  var capitalized = convereted.replace(a|e|i|o|i/, function(vowel){
+    return vowel.toUppercase();
+  });
+  return capitalized;
+}
+
+LetterChanges("fun times!")
