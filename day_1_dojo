@@ -1,9 +1,39 @@
-// Finding only odd numbers from an array between 1 and 255
-function oddArrays(){
-  var oddArray =[];
-  for(var i = 1; i <= 255; i++){
-    if(i % 2 !== 0){
-      return oddArray;
+// // Finding only odd numbers from an array between 1 and 255
+// function oddArrays(){
+//   var oddArray =[];
+//   for(var i = 1; i <= 255; i++){
+//     if(i % 2 !== 0){
+//       return oddArray;
+//     }
+//   }
+// }
+
+function maxMinAvg(arr){
+  var max = arr[0];
+  var min = arr[0];
+  var sum = arr[0];
+
+    for(var i = 1; i < arr.length; i++){
+      if(max < arr[i]){
+        max = arr[i];
+      }
+      if(min > arr[i]){
+        min = arr[i];
     }
+    sum = sum + arr[i];
   }
+  var avg = sum / arr.length;
+  var arrNew = [max, min, avg];
+  return arrNew;
 }
+
+
+// function maxNumber(arr){
+//     var max = arr[0];
+//     for(var i = 1; i< arr.length; i++){
+//         if(max < arr[i]){
+//             max = arr[i];
+//         }
+//     }
+//     return max;
+// }
