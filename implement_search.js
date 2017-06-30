@@ -1,12 +1,12 @@
-// var swap = function(array, firstIndex, secondIndex){
-//   var temp = array[firstIndex];
-//   array[firstIndex] = array[secondIndex];
-//   array[secondIndex] = temp;
-// };
-//
-// var testArray = [9,7,4];
-// swap(testArray, 2, 1);
-// console.log(testArray);
+var swap = function(array, firstIndex, secondIndex){
+  var temp = array[firstIndex];
+  array[firstIndex] = array[secondIndex];
+  array[secondIndex] = temp;
+};
+
+var testArray = [9,7,4];
+swap(testArray, 2, 1);
+console.log(testArray);
 
 //
 var indexOfMinimum = function (array, startIndex){
