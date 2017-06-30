@@ -104,3 +104,30 @@ function negative(arr){
     }
     return arr;
 }
+
+
+
+Rank these functions according to their growth, from slowest growing to fastest growing.
+64
+log8n
+log2n
+4n
+n log6n
+n log2n
+6n3
+8n2
+82n
+
+Order:
+-Constant Functions:
+  64
+-Logarithmic Functions:
+  log8n, log2n
+-Linear Functions:
+  4n
+-Linearithmic Functions:
+  n log2n, n log4n
+-Polynomial Functions:
+  8n2 8n3
+-Exponential Functions:
+  82n
