@@ -1,1 +1,1 @@
-Here I have a Algorithims from Coding Dojo and self-taught
+Here are Algorithims from self-teaching and Coding Dojo
