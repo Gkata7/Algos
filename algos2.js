@@ -147,3 +147,45 @@ function oneAnother(arr){
 }
 
 oneAnother([1,2,3,4,5]);
+
+function doubleVision(arr){
+  var newArr = [];
+  for(var i = 0; i < arr.length; i++){
+    newArr.push(arr[i] * 2);
+  }
+  console.log(newArr);
+  return newArr;
+}
+
+doubleVision([1,2,3]);
+
+function positives(arr){
+  var positive = 6;
+  var index = arr[0];
+  for(var i = 0 ; i < arr.length; i++){
+    index = i
+  }
+    arr[index] = positive;
+  console.log(arr);
+  return arr;
+}
+
+positives([-1,2,3,4,5]);
+
+function evenOdd(arr){
+  var odd = 0;
+  var even = 0;
+  for(var i = 0 ; i < arr.length; i++){
+    if(arr[i] % 2 == 1){
+      odd++;
+    if(odd % arr[i]){
+      console.log("That's Odd!");
+      }
+    }else{
+      console.log("Even So!");
+    }
+  }
+}
+
+evenOdd([1,1,1,2,3,4,4,4]);
+
