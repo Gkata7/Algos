@@ -106,3 +106,44 @@ function biggieSize(arr){
 }
 
 biggieSize([1,23,-44,-30]);
+
+function lowHigh(arr){
+  var low = arr[0];
+  var high = arr[0];
+  if(arr.length == 0){
+    console.log("It's Empty");
+  }else if(arr.length == 1){
+    low = arr[i];
+    high = arr[i];
+  }else{
+    for(var i = 0; i < arr.length; i++){
+      if(arr[i] high){
+        high = arr[i];
+      }
+    }
+  }
+  console.log(low);
+  return(high);
+}
+
+lowHigh([]);
+
+function oneAnother(arr){
+  var odd = arr[0];
+  if(arr.length == 0){
+    console.log("The Array is Empty");
+  }else if(arr.length == 1){
+    console.log("There is only one element");
+  }else{
+      for(var i = 0; i < arr.length; i++){
+        if(arr[i] % 2 == 1){
+        odd = arr[i];
+        break;
+      }
+    }
+  }
+  console.log(arr[arr.length -1]);
+  return odd;
+}
+
+oneAnother([1,2,3,4,5]);
