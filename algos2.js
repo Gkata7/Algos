@@ -216,3 +216,44 @@ function seconds(arr){
 }
 
 seconds([1,3,5,4,5,6]);
+
+function lengths(arr){
+  for(var i = 0; i < arr.length; i++){
+    if(typeof arr[i] == 'string'){
+      arr[i] = arr[i].length;
+      console.log("string");
+    }else{
+      console.log("no string");
+    }
+  }
+  console.log(arr);
+  return arr;
+}
+
+lengths(["hi", 1,3,45,"money", "coding"])
+
+function addSeven(arr){
+  var newArr = [];
+  for(var i = 0; i < arr.length; i++){
+    if(typeof arr[1] == 'number'){
+      arr[i] ++;
+      newArr.push(arr[i] + 7);
+    }
+  }
+  console.log(newArr);
+  return arr;
+}
+
+addSeven([1,2,3,4,5]);
+
+function reverseArray(arr){
+  for(var i = 0; i < arr.length / 2; i++){
+    temp = arr[i];
+    arr[i] = arr[arr.length - 1 - i];
+    arr[arr.length - 1 - i] = temp;
+  }
+  console.log(arr);
+  return arr;
+}
+
+reverseArray([2,5,1,10,22]);
