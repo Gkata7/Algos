@@ -298,3 +298,13 @@ function swapCenter(arr){
 }
 
 swapCenter([1,2,3,4,5,6]);
+
+function scaleArray(arr,num){
+  for(var i = 0; i < arr.length; i++){
+    arr[i] *= num;
+  }
+  console.log(arr);
+  return arr;
+}
+
+scaleArray([1,2,3,4,5],2);
