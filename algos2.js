@@ -257,3 +257,44 @@ function reverseArray(arr){
 }
 
 reverseArray([2,5,1,10,22]);
+
+function negative(arr){
+  var newArr = [];
+  for(var i = 0; i < arr.length; i++){
+      newArr.push(arr[i] * -1);
+  }else {
+      newArr.push(arr[i]);
+  }
+    console.log(newArr);
+    return arr;
+  }
+
+negative([1,20,-4,-5,6]);
+
+function hungry(arr){
+  for(var i = 0; i < arr.length; i++){
+    if(arr[i] == 'food'){
+      console.log('yummy');
+    }else{
+      console.log('Im hungry');
+    }
+  }
+  console.log(arr);
+  return arr;
+}
+
+hungry(['food',2,3,'bball']);
+
+function swapCenter(arr){
+  for(var i = 0; i < Math.floor(arr.length/2); i++){
+    if(i % 2 == 0){
+      temp = arr[i];
+      arr[i] = arr[arr.length - 1 -i];
+      arr[arr.length - 1 - i] = temp;
+    }
+  }
+  console.log(arr);
+  return arr;
+}
+
+swapCenter([1,2,3,4,5,6]);
