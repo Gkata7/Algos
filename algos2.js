@@ -189,3 +189,30 @@ function evenOdd(arr){
 
 evenOdd([1,1,1,2,3,4,4,4]);
 
+
+function lengths(arr){
+  for(var i = 0; i < arr.length; i++){
+    if(typeof arr[i] == 'string'){
+      arr[i] = arr[i].length;
+      console.log("string");
+    }else{
+      console.log("no string");
+    }
+  }
+  console.log(arr);
+  return arr;
+}
+
+lengths(["hi", 1,3,45,"money"])
+
+function seconds(arr){
+  for(var i = 0; i < arr.length; i++){
+    if(i % 2 == 1){
+      arr[i] += 1;
+    }
+  }
+  console.log(arr);
+  return arr;
+}
+
+seconds([1,3,5,4,5,6]);
