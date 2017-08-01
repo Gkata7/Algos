@@ -308,3 +308,99 @@ function scaleArray(arr,num){
 }
 
 scaleArray([1,2,3,4,5],2);
+
+function keepFew(arr,num){
+  for(var i = 0; i < num; i++){
+    arr.shift();
+  }
+  console.log(arr);
+  return arr;
+}
+
+keepFew([2,4,6,8,10],2);
+
+function mathHelp(m,b){
+  var coefficients = [];
+  coefficients.push(0);
+  console.log(coefficients);
+  return coefficients
+}
+
+mathHelp(2,-4);
+y = MX + B
+-In this case b = 2 and m = -4
+y = (-4)(0) + 2
+y = (0,2)
+
+function whatHappensToday(probability){
+  if(probability < 0.11){
+    console.log("Volcano Eruption");
+  }else if(probability < 0.26){
+    console.log("Tsunami Storm!");
+  }else if(probability < 0.46){
+    console.log("Eartquake Time!");
+  }else if(probability < 0.71){
+    console.log("Blizzard Time!");
+  }else{
+    console.log("Meteor Strike");
+  }
+}
+
+whatHappensToday(0.72);
+
+function whatReallyHappensToday(day){
+  var disaster = ["Volcanic Eruption", "Tsunami Storm", "Earthquake Time", "Blizzard Time","Meteor Strike"];
+  var probability = 0;
+  var counter = 0;
+  var disasterCount = 0;
+  while(day != 0){
+    day--;
+    counter++;
+    console.log("Day Counter");
+    for(var i = 0; i < disaster.length - 1; i++){
+      if(i == 1){
+        probability = Math.random().toFixed(2);
+        console.log("Rolling Probability +".Iteration + i);
+      if(probability <= 0.10){
+          console.log(disaster[0]);
+          disasterCount++;
+        }
+      } else if(i == 2){
+          probability = Math.random().toFixed(2);
+          console.log("Rolling Probability +".Iteration + i);
+        if(probability <= 0.15){
+          console.log(disaster[1]);
+          disasterCount++;
+        }
+      } else if(i == 3){
+          probability = Math.random().toFixed(2);
+          console.log("Rolling Probability +".Iteration + i);
+        if(probability <= 0.20){
+          console.log(disaster[2]);
+          disasterCount++;
+        }
+      } else if(i == 4){
+          probability = Math.random().toFixed(2);
+          console.log("Rolling Probability +".Iteration + i);
+        if(probability <= 0.25){
+          console.log(disaster[3]);
+          disasterCount++;
+        }
+      } else{
+          probability = Math.random().toFixed(2);
+          console.log("Rolling Probability +".Iteration + i);
+        if(probability <= 0.30){
+          console.log(disaster[4]);
+          disasterCount++;
+        }
+      }
+      if(disasterCount == 0){
+        console.log("We're Doom!!!..maybe");
+      }
+    }
+  }
+  return day;
+}
+
+whatReallyHappensToday(0.20);
+
