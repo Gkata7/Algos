@@ -404,3 +404,43 @@ function whatReallyHappensToday(day){
 
 whatReallyHappensToday(0.20);
 
+
+function letterGrade(score){
+    if(score >= 90){
+      console.log("Score: " + score + " Grade: A" );
+    }else if(score >= 80){
+      console.log("Score: " + score + " Grade: B");
+    }else if(score >= 70){
+      console.log("Score: " + score + " Grade: C");
+    }else if(score >= 60){
+      console.log("Score: " + score + " Grade: D");
+    }else{
+      console.log("Score: " + score + " Grade: F");
+    }
+    return score;
+}
+
+letterGrade(50);
+
+function accurateGrades(score){
+  if(score % 10 == 1 && score % 10 == 2){
+    console.log("-");
+  }
+  if(score % 10 == 8 && score % 10 == 9){
+    console.log("+");
+  }
+    if(score >= 90){
+      console.log("Score: " + score + " Grade: A");
+    }else if(score >= 80){
+      console.log("Score: " + score + " Grade: B");
+    }else if(score >= 70){
+      console.log("Score: " + score + " Grade: C");
+    }else if(score >= 60){
+      console.log("Score: " + score + " Grade: D");
+    }else{
+      console.log("Score: " + score + " Grade: F");
+    }
+    return score;
+}
+
+accurateGrades(89);
