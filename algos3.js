@@ -25,6 +25,17 @@ factorial(6);
 
 
 function drawLeftStars(num){
+  var string = '';
+  for(var i = 0; i < num; i++){
+    string += "*";
+  }
+  console.log(string);
+  return string;
+}
+
+drawLeftStars(30);
+
+function drawRightStars(num){
   var stars = "";
   var counter = 0;
   if(num > 75 || num < 0){
