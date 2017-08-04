@@ -55,4 +55,4 @@ function drawRightStars(num){
   return stars;
 }
 
-drawLeftStars(75);
+drawRightStars(75);
