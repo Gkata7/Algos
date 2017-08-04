@@ -56,3 +56,22 @@ function drawRightStars(num){
 }
 
 drawRightStars(75);
+
+
+function drawCenteredStar(num){
+  var stars = "";
+  var counter = 0;
+  for(var i = 0; i <= Math.floor((75-num)/2); i++){
+    stars += "";
+    if(i == Math.floor((75-num)/2)){
+      while(counter < num){
+        counter++;
+        stars += "*";
+      }
+    }
+  }
+  console.log(stars);
+  return stars;
+}
+
+drawCenteredStar(50);
