@@ -162,3 +162,18 @@ function fibonacci(num){
   }
 }
 console.log(fibonacci(13));
+
+function oneDigit(num){
+  var sum = 0;
+  var str = num.toString();
+  if(str.length == 1){
+    sum = parseInt(str,10);
+    return sum;
+  }else{
+    for(var i = 0; i < str.length; i++){
+      sum += parseInt(str.charAt(i), 10);
+    }
+    return oneDigit(sum);
+  }
+}
+console.log(oneDigit(564));
