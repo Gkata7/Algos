@@ -120,3 +120,45 @@ function coinChange(cents){
 }
 
 coinChange(3);
+
+function messyMath(num){
+  var sum = 0;
+  for(var i = 0; i <= num; i++){
+    if((num/3) % i === 0){
+      sum = -1;
+      break;
+    }else if(i % 3 === 0){
+      continue;
+    }else if(i % 7 === 0){
+      sum += 2 * i;
+    }else{
+      sum += i;
+    }
+  }
+  console.log(sum);
+  return sum;
+}
+
+messyMath(10);
+
+function barBlues(){
+  var song = "";
+  for(var i = 0; i <= 12; i++){
+    song = "# " + i + " chick " + "boom " + "chick";
+    console.log(song);
+  }
+  return song;
+}
+
+barBlues();
+
+function fibonacci(num){
+  if(num === 0){
+    return 0;
+  }else if(num === 1){
+    return 1;
+  }else{
+    return fibonacci(num - 2) + fibonacci(num - 1);
+  }
+}
+console.log(fibonacci(13));
