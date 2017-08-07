@@ -1,3 +1,5 @@
+// Create a function that accepts a number as an input. Return a new Array that down by one, from the number down to 0.
+
 function countdown(num){
 var newArr = [];
   for(var i = num; i > 0; i--){
@@ -6,11 +8,16 @@ var newArr = [];
   return arr.length;
 }
 
+// Create a function that receieves an array with two numbers. Print the first value and return the second.
+
 function print(x,y){
   console.log(x);
   return[y]
 }
 print(1,2)
+
+// Given an array, return the sum of the first value in the array, plus the array's length.What happens if the array's first
+// value is not a number, but string or boolean?
 
 function firstLength(arr){
   if(typeof arr[0] != 'number'){
@@ -24,6 +31,8 @@ function firstLength(arr){
 
 firstLength([10,23,4,5]);
 
+// For [1,3,5,7,9,13], print values that are greater than its 2nd value. Return how many values this is.
+
 function greater(val){
   var newArr = [];
   for(var i = 0; i < arr.length; i++){
@@ -34,7 +43,8 @@ function greater(val){
   return newArr;
 }
 
-
+// Write a function that accepts any array, and returns a new array with the array values that are greater than it's 2nd value.
+// Print how many values this is. What will you do if the array is only one element long?
 
 function greaterThan(arr){
   var newArr = [];
@@ -55,6 +65,7 @@ function greaterThan(arr){
 greaterThan([3,1,2,66,10]);
 
 
+// Given two numbers, return array of length num1 with value num2. Print "Jinx!" if they are same.
 function length(num1,num2){
   var newArr = [];
   newArr.push(num1,num2);
@@ -66,7 +77,8 @@ function length(num1,num2){
 }
 length(20,20000000);
 
-
+// Your function should accept an array. if value at [0] is greater than array's length, print "Too Big!"; if value[0] is less
+// than array's length, print "Too Small!"; otherwise print "Just Right!"
 function firstValue(arr){
   var newArr = [];
   if(arr[0] > arr.length){
@@ -81,6 +93,8 @@ function firstValue(arr){
 
 firstValue([2,2])
 
+// Kelvin wants to convert between temperature scales. Create fahrenheit(num) that accepts a number of degrees in Fahrenheit,
+// and returns the equivalent temperature as expressed in Celsius Degrees. For review, Fahrenheit = (9/5 * Celsius) + 32.
 function fahrenheit(num){
   var fahrenheit = (9/5 * celsius) + 32;
   var celsius = 0;
@@ -91,7 +105,8 @@ function fahrenheit(num){
 
 fahrenheit(50);
 
-
+// Given an array write a function that changes all positive numbers in the array to "big". Example: makeItBig([-1,3,5,-5]) 
+// returns that same array, changed to [-1, "big", "big", -5].
 function biggieSize(arr){
   var newArr = [];
   for(var i = 0; i < arr.length; i++){
@@ -107,6 +122,8 @@ function biggieSize(arr){
 
 biggieSize([1,23,-44,-30]);
 
+// Create a function that takes array of numbers. The function should print the lowest value in the array, and return
+// the highest value in the array.
 function lowHigh(arr){
   var low = arr[0];
   var high = arr[0];
@@ -128,6 +145,8 @@ function lowHigh(arr){
 
 lowHigh([]);
 
+// Build a function that takes array of numbers. The function should print second-to-last value in the array, and return
+// first odd value in the array.
 function oneAnother(arr){
   var odd = arr[0];
   if(arr.length == 0){
@@ -148,6 +167,8 @@ function oneAnother(arr){
 
 oneAnother([1,2,3,4,5]);
 
+// Given array, create a function to return a new array where each value in the original has been doubled. Calling 
+// double([1,2,3]) should return ([2,4,6]) without changing original.
 function doubleVision(arr){
   var newArr = [];
   for(var i = 0; i < arr.length; i++){
@@ -159,6 +180,8 @@ function doubleVision(arr){
 
 doubleVision([1,2,3]);
 
+// Given array of numbers, create function to replace last value with number of positive values. Example,
+// countPositives([-1,1,1,1]) changes array to [-1,1,1,3] and returns it.
 function positives(arr){
   var positive = 6;
   var index = arr[0];
@@ -172,6 +195,8 @@ function positives(arr){
 
 positives([-1,2,3,4,5]);
 
+// Create a function that accepts an array. Every time that array has three odd values in a row, print "That's odd!" Every
+// time the array has three evens in a row, print "Even More So!"
 function evenOdd(arr){
   var odd = 0;
   var even = 0;
@@ -189,7 +214,8 @@ function evenOdd(arr){
 
 evenOdd([1,1,1,2,3,4,4,4]);
 
-
+// You are passed an array containing strings. Working within that same array, replace each string with a number- the length
+// of the string at previous array index and return the array.
 function lengths(arr){
   for(var i = 0; i < arr.length; i++){
     if(typeof arr[i] == 'string'){
@@ -205,6 +231,8 @@ function lengths(arr){
 
 lengths(["hi", 1,3,45,"money"])
 
+// Given an array of numbers arr, add 1 to every second element, specifically those whose index is odd(arr[1],arr[3],arr[5]) etc.
+// Afterward, console.log each array value and return arr.
 function seconds(arr){
   for(var i = 0; i < arr.length; i++){
     if(i % 2 == 1){
@@ -217,21 +245,7 @@ function seconds(arr){
 
 seconds([1,3,5,4,5,6]);
 
-function lengths(arr){
-  for(var i = 0; i < arr.length; i++){
-    if(typeof arr[i] == 'string'){
-      arr[i] = arr[i].length;
-      console.log("string");
-    }else{
-      console.log("no string");
-    }
-  }
-  console.log(arr);
-  return arr;
-}
-
-lengths(["hi", 1,3,45,"money", "coding"])
-
+// Build function that accepts array. Return a new array with all values except first, adding 7 to each. Do not alter the original array.
 function addSeven(arr){
   var newArr = [];
   for(var i = 0; i < arr.length; i++){
@@ -246,6 +260,8 @@ function addSeven(arr){
 
 addSeven([1,2,3,4,5]);
 
+// Given array, write a function that reverses values in place. Example: ([3,1,6,4,2]) returns the same array,
+// containing [2,4,6,1,3]
 function reverseArray(arr){
   for(var i = 0; i < arr.length / 2; i++){
     temp = arr[i];
@@ -258,6 +274,8 @@ function reverseArray(arr){
 
 reverseArray([2,5,1,10,22]);
 
+// Given an array, create and return a new one containing all the values of the provided array, made negative.
+// Given [1,-3, 5] return [-1,-3,-5]
 function negative(arr){
   var newArr = [];
   for(var i = 0; i < arr.length; i++){
@@ -271,6 +289,8 @@ function negative(arr){
 
 negative([1,20,-4,-5,6]);
 
+// Create a function that accepts an array, and prints "yummy" each time one of the values is equal to "food". If no array
+// elements are "food", then print "I'm Hungry" once.
 function hungry(arr){
   for(var i = 0; i < arr.length; i++){
     if(arr[i] == 'food'){
@@ -285,6 +305,8 @@ function hungry(arr){
 
 hungry(['food',2,3,'bball']);
 
+// Given array, swap first and last, third and third-to-last,etc. Input[true,42,"ada",2,"pizza"] becomes ["pizza",42,"ada",2,true].
+// Change [1,2,3,4,5,6] to [6,5,4,3,2,1]
 function swapCenter(arr){
   for(var i = 0; i < Math.floor(arr.length/2); i++){
     if(i % 2 == 0){
@@ -299,6 +321,7 @@ function swapCenter(arr){
 
 swapCenter([1,2,3,4,5,6]);
 
+// Given an array arr and number num, multiply all values in arr by num and return the changed array arr.
 function scaleArray(arr,num){
   for(var i = 0; i < arr.length; i++){
     arr[i] *= num;
@@ -309,6 +332,8 @@ function scaleArray(arr,num){
 
 scaleArray([1,2,3,4,5],2);
 
+// Stan learned somethin today: That reducing an array's.length immediately shortens it by that amount. Given array arr and 
+// number X, remove all except the last X elements, and return arr. Given ([2,4,6,8,10],3) change the given array to [6,8,10] and return it.
 function keepFew(arr,num){
   for(var i = 0; i < num; i++){
     arr.shift();
@@ -319,6 +344,8 @@ function keepFew(arr,num){
 
 keepFew([2,4,6,8,10],2);
 
+// Cartman doesnt really like math class and needs help. You are given two numbers - the coefficients M and B in the equation
+// Y = MX + B. Build a function that returns X-intercept.
 function mathHelp(m,b){
   var coefficients = [];
   coefficients.push(0);
@@ -332,6 +359,8 @@ y = MX + B
 y = (-4)(0) + 2
 y = (0,2)
 
+// Kenny tries to be safe, but somehow everyday something happens. If there is a 10% chance of volcano, 15% chance of Tsunami,
+// 20% chance of earthquake, 25% chance of blizzard, and 30% chance of meteor strike, write a function whatHappensToday() to print the outcome.
 function whatHappensToday(probability){
   if(probability < 0.11){
     console.log("Volcano Eruption");
@@ -347,6 +376,7 @@ function whatHappensToday(probability){
 }
 
 whatHappensToday(0.72);
+
 
 function whatReallyHappensToday(day){
   var disaster = ["Volcanic Eruption", "Tsunami Storm", "Earthquake Time", "Blizzard Time","Meteor Strike"];
@@ -405,6 +435,9 @@ function whatReallyHappensToday(day){
 whatReallyHappensToday(0.20);
 
 
+// Write a function that assigns and prints a letter grade, given an integer representing a score from 0 to 100. Those getting
+// 90+ get an 'A', 80-89 earn 'B', 70-79 earn 'C', 60-69 earn 'D', 59 or lower receieve an 'F'.
+// example: ("Score: 73 Grade: C")
 function letterGrade(score){
     if(score >= 90){
       console.log("Score: " + score + " Grade: A" );
