@@ -1,3 +1,5 @@
+// Implement function sigma(num) that given a number, returns the sum of all positive integers up to number(inclusive).
+// Example: sigma(3) = 6 (1+2+3)
 function sigma(num){
   var sum = 0;
   for(var i = 0; i <= num; i++){
@@ -10,6 +12,8 @@ function sigma(num){
 sigma(5);
 sigma(3);
 
+// Write a function that given a number, returns the product(multiplication) of all positive integers from 1 up to number(inclusive)
+// Example: factorial(3) = 6(1*2*3)
 function factorial(num){
   var sum = 1;
   for(var i = 1; i <= num; i++){
@@ -76,7 +80,8 @@ function drawCenteredStar(num){
 
 drawCenteredStar(50);
 
-
+// Create threesFives that adds values from 100 to 4000000 if the value is evenly divisible by 3 or 5 but not both.
+// Display the final sum in the console.
 function threeFives(){
   var sum = 0;
   for(var i = 100; i < 4000001; i++){
@@ -141,6 +146,7 @@ function messyMath(num){
 
 messyMath(10);
 
+// Write a function that console.logs the number 1 then "chick", "boom", "chick", then it repeates all the way up to number 12.
 function barBlues(){
   var song = "";
   for(var i = 0; i <= 12; i++){
@@ -152,6 +158,9 @@ function barBlues(){
 
 barBlues();
 
+// Create a function generate fibonacci numbers. In this famous mathematical sequence, each number is the sum of the previous two,
+// starting with values 0 and 1. Your function should accept one argument, an index into the sequence(0 reponds to initial value, 4 responds to initial value, etc.)
+// Example: fibonacci(1) = 1, fibonacci(2)= 1, fibonacci(3) = 2(fib(1)+fib(2)), fibonacci(4) = 3(1+2)
 function fibonacci(num){
   if(num === 0){
     return 0;
